@@ -10,3 +10,10 @@ function calcular(n1: number, n2: number) {
 bt_calc.addEventListener('click', function () {
     res.innerHTML = (calcular(+n1.value, +n2.value)).toString()
 })
+
+function caixaAlta(nome: string) {
+    let primeiraLetra = nome[0].toUpperCase()
+    return `${primeiraLetra}${nome.substring(1)}`
+}
+
+caixaAlta('tucci')
