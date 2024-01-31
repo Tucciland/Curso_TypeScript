@@ -11,9 +11,9 @@ bt_calc.addEventListener('click', function () {
     res.innerHTML = (calcular(+n1.value, +n2.value)).toString()
 })
 
-function caixaAlta(nome: string) {
+function caixaAlta(nome: string): string {
     let primeiraLetra = nome[0].toUpperCase()
     return `${primeiraLetra}${nome.substring(1)}`
 }
 
-caixaAlta('tucci')
+let nomeCaixAlta = caixaAlta('tucci')
